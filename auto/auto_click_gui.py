@@ -40,10 +40,13 @@ def hotkey_listener():
 root = tk.Tk()
 root.title("クリック連打ツール")
 root.protocol("WM_DELETE_WINDOW", lambda :quit_me(root))
-root.geometry("200x100")
+root.geometry("200x135")
 
 label = tk.Label(root, text="クリックの間隔(秒)を入力:")
 label.pack()
+
+keyLabel = tk.Label(root, text="F7: クリック開始\nF8: クリック停止")
+keyLabel.pack()
 
 entry = tk.Entry(root)
 entry.pack()
