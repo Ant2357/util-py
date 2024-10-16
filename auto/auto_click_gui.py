@@ -43,6 +43,7 @@ root = tk.Tk()
 root.title("SOVIET AUTO CLICKER")
 root.protocol("WM_DELETE_WINDOW", lambda: quit_me(root))
 root.geometry("300x300")
+root.resizable(False, False)
 
 
 # 背景画像の設定
