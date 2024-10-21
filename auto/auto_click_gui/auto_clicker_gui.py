@@ -28,11 +28,11 @@ class AutoClickerGUI:
         title_label.pack(pady=10)
 
         # 説明ラベル(現時点では英語)(後日変更する可能性有り)
-        label = tk.Label(root, text="Enter click interval (seconds):", font=("Helvetica", 12), fg="white", bg="#800000")
+        label = tk.Label(root, text="Enter click interval (seconds):", font=("Helvetica", 12), fg="#FFD700", bg="#800000")
         label.pack()
 
         # ホットキーショートカットの説明
-        keyLabel = tk.Label(root, text="F7: Start clicking\nF8: Stop clicking", font=("Helvetica", 10), fg="white", bg="#800000")
+        keyLabel = tk.Label(root, text="F7: Start clicking\nF8: Stop clicking", font=("Helvetica", 10, "bold"), fg="#FFD700", bg="#800000")
         keyLabel.pack(pady=5)
 
         # クリック間隔の入力フィールド
