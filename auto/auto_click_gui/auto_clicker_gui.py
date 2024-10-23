@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import PhotoImage
 import threading
 import time
 import keyboard
@@ -14,6 +15,7 @@ class AutoClickerGUI:
         root.protocol("WM_DELETE_WINDOW", self.quit_me)
         root.geometry("300x300")
         root.resizable(False, False)
+        root.iconphoto(True, PhotoImage(file="./assets/images/background.png"))
 
         # 背景画像の設定
         image = Image.open("./assets/images/background.png")
