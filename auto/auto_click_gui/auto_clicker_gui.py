@@ -5,6 +5,17 @@ import time
 import keyboard
 from PIL import Image, ImageTk
 
+import os
+import sys
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 class AutoClickerGUI:
     def __init__(self, root, clicker) -> None:
         self.root = root
@@ -15,10 +26,10 @@ class AutoClickerGUI:
         root.protocol("WM_DELETE_WINDOW", self.quit_me)
         root.geometry("300x300")
         root.resizable(False, False)
-        root.iconphoto(True, PhotoImage(file="./assets/images/background.png"))
+        root.iconphoto(True, PhotoImage(file=resource_path("assets/images/background.png")))
 
         # 背景画像の設定
-        image = Image.open("./assets/images/background.png")
+        image = Image.open(resource_path("assets/images/background.png"))
         resized_image = image.resize((300, 300), Image.Resampling.LANCZOS)
         self.background_image = ImageTk.PhotoImage(resized_image)
         background_label = tk.Label(root, image=self.background_image)
