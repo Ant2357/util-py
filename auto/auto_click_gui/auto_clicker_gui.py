@@ -3,6 +3,7 @@ from tkinter import PhotoImage
 import threading
 import time
 import keyboard
+from plyer import notification
 from PIL import Image, ImageTk
 
 import os
@@ -66,6 +67,12 @@ class AutoClickerGUI:
 
 
     def start_clicking(self) -> None:
+        if not self.clicker.clicking:
+            self.show_notification(
+                "Auto Clicker Started",
+                "F8: オートクリック停止",
+            )
+
         self.clicker.click_interval = float(self.entry.get())
         self.clicker.start_clicking()
 
@@ -79,6 +86,14 @@ class AutoClickerGUI:
             elif keyboard.is_pressed("F8"):
                 self.clicker.stop_clicking()
             time.sleep(0.1)
+
+    def show_notification(self, title: str, message: str, timeout: int = 15) -> None:
+        notification.notify(
+            title = title,
+            message = message,
+            app_name = "SOVIET AUTO CLICKER",
+            timeout = timeout
+        )
 
     def quit_me(self) -> None:
         self.running = False
