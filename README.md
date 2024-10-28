@@ -1,7 +1,14 @@
 # util-py
 日常生活で使う小さな Python コードの置き場
 
-## Usage
+## Auto Click GUI(USSR) の使い方
+![Auto Click GUI を使用している画面の写真](./auto_click_gui_image.png "Auto Click GUI を使用している画面の写真")
+
+環境構築等は不要、/auto/auto_click_gui 直下にある SovietAutoClicker.exe を実行してください。
+
+## get_m4r.py の使い方
+音源を m4r で取得する書き捨てコード
+
 ※ 事前に ffmpeg を導入してください。
 
 ```sh
@@ -10,9 +17,7 @@ cd util-py
 
 # 説明簡略化の為に書いてないけど、基本は venv 等を使ってください
 pip install -r requirements.txt
+
+cd youtube
+python get_m4r.py
 ```
-
-## Auto Click GUI(USSR) の使い方
-![Auto Click GUI を使用している画面の写真](./auto_click_gui_image.png "Auto Click GUI を使用している画面の写真")
-
-環境構築等は不要、/auto/auto_click_gui 直下にある SovietAutoClicker.exe を実行してください。
