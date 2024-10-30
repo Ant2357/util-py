@@ -41,7 +41,7 @@ class AutoClickerGUI:
         title_label = tk.Label(root, text="КЛИКЕР", font=("Helvetica", 20, "bold"), fg="#FFD700", bg="#800000")
         title_label.pack(pady=10)
 
-        # 説明ラベル(現時点では英語)(後日変更する可能性有り)
+        # 説明ラベル(後日変更する可能性有り)
         label = tk.Label(root, text="クリック間隔を入力してください", font=("MS 明朝", 12, "bold"), fg="#FFD700", bg="#800000")
         label.pack()
 
