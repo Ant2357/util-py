@@ -53,7 +53,7 @@ class AutoClickerGUI:
 
         # クリック間隔の入力フィールド
         vcmd = self.root.register(self.onValidateNumber)
-        self.entry = tk.Entry(self.root, validate="key", validatecommand=(vcmd, "%P"), font=("Helvetica", 12), justify='center', fg="#FFD700", bg="#800000")
+        self.entry = tk.Entry(self.root, validate="key", validatecommand=(vcmd, "%P"), font=("Helvetica", 12), justify='center', fg="#FFD700", bg="#333333", insertbackground="#FFD700")
         self.entry.insert(0, "0.5")
         self.entry.pack(pady=5)
 
