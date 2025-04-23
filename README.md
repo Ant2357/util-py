@@ -6,6 +6,16 @@
 
 環境構築等は不要、/auto/auto_click_gui 直下にある SovietAutoClicker.exe を実行してください。
 
+## Get Youtube Audio GUI の使い方
+![Get Youtube Audio GUI を使用している画面の写真](./get_youtube_audio_gui_image.png "Get Youtube Audio GUI を使用している画面の写真")
+
+※ 事前に ffmpeg を導入してください。
+
+/youtube 直下にある get_youtube_audio_gui.exe を実行してください。
+
+1. URL と保存名を入力します。
+1. MP3 か M4R のダウンロードボタンを押せば完了です。
+
 ## get_m4r.py の使い方
 音源を m4r で取得する書き捨てコード
 
