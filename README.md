@@ -18,19 +18,3 @@ YouTube 上から音源を取得する GUI
 
 1. URL と保存名を入力します。
 1. MP3 か M4R のダウンロードボタンを押せば完了です。
-
-## get_m4r.py の使い方
-音源を m4r で取得する書き捨てコード
-
-※ 事前に ffmpeg を導入してください。
-
-```sh
-git clone https://github.com/Ant2357/util-py.git
-cd util-py
-
-# 説明簡略化の為に書いてないけど、基本は venv 等を使ってください
-pip install -r requirements.txt
-
-cd youtube
-python get_m4r.py
-```
