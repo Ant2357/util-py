@@ -17,4 +17,4 @@ YouTube 上から音源を取得する GUI
 /youtube 直下にある get_youtube_audio_gui.exe を実行してください。
 
 1. URL と保存名を入力します。
-1. MP3 or M4R のダウンロードボタンを押せば完了です。
+1. MP3 か M4R のダウンロードボタンを押せば完了です。
