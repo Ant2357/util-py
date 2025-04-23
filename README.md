@@ -9,8 +9,11 @@
 ## Get Youtube Audio GUI の使い方
 ![Get Youtube Audio GUI を使用している画面の写真](./get_youtube_audio_gui_image.png "Get Youtube Audio GUI を使用している画面の写真")
 
-※ 事前に ffmpeg を導入してください。
+YouTube 上から音源を取得する GUI
 
+※ 事前に ffmpeg を導入してから GUI を起動してください。
+
+### Usage
 /youtube 直下にある get_youtube_audio_gui.exe を実行してください。
 
 1. URL と保存名を入力します。
